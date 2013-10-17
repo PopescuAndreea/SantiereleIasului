@@ -1,0 +1,127 @@
+html, body {
+  color: #89a;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 22px;
+  font-family: 'Black Ops One', cursive;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: 'Black Ops One', cursive;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  line-height: 120%;
+}
+
+br {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #69c;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
+
+#header {
+  position: relative;
+  z-index: 1;
+  height: 35px;
+  background: url("../images/noise.png"), url("../images/header.png");
+  background-size: auto, 100% 100%;
+  box-shadow: 0 0 50px 20px #fff;
+  padding-top: 15px;
+  text-align: center;
+}
+
+#page {
+  height: 100%;
+  background-image: url("../images/noise.png"), url("../images/background.png");
+  background-size: auto, 100%;
+}
+
+#map {
+  position: relative;
+  width: 1000px;
+  height: 800px;
+  background: url("../images/map.png") center no-repeat;
+  background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pin {
+  position: absolute;
+  display: block;
+  transform: translate(-45px, -60px);
+  -webkit-transform: translate(-45px, -60px);
+  -moz-transform: translate(-45px, -60px);
+}
+
+#bubble {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  box-shadow: 2px 2px 8px #666;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: url("../images/noise.png"), #ffe;
+  opacity: 0.95;
+  color: #889;
+  text-shadow: 0 1px #fff;
+  transform: translate(-260px, 0px);
+  -webkit-transform: translate(-260px, 0px);
+  -moz-transform: translate(-260px, 0px);
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+}
+
+#bubble.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#bubble-title {
+  padding-bottom: 6px;
+}
+
+.bubble-image {
+  display: inline-block;
+  height: 110px;
+  width: 110px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  margin-left: 4px;
+  border: 3px solid #fff;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px #aaa;
+}
+
+.bubble-image.hidden {
+  display: none;
+}
+
+#bubble-details {
+  overflow: auto;
+  min-height: 30px;
+  max-height: 200px;
+  font-size: 12px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 40px;
+  left: 50px;
+}
